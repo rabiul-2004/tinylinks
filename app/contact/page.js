@@ -46,7 +46,7 @@ const Contact = () => {
             redirect: "follow",
         }
 
-        fetch("http://localhost:3000/api/feedback", requestOptions)
+        fetch("/api/feedback", requestOptions)
             .then((res) => res.json())
             .then((result) => {
                 setSubmitMessage(result.message)
