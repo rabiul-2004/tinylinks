@@ -18,7 +18,7 @@ const roboto = Roboto({
 export default function Home() {
   return (
     <>
-      <div className="bg-gradient-to-b from-blue-50 to-white md:h-[50vh] flex flex-col md:flex-row w-full">
+      <div className="bg-gradient-to-b from-blue-50 to-white md:min-h-[50vh] flex flex-col md:flex-row w-full">
         {/* Text Section */}
         <div className="md:w-1/2 flex flex-col justify-center items-center text-center px-6 py-10 max-w-md mx-auto">
           <p

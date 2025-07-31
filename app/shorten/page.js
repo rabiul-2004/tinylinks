@@ -74,7 +74,13 @@ const Shorten = () => {
             <div className="bg-white text-black p-4 rounded-lg shadow-md w-full max-w-md text-sm">
                 <h2 className="text-lg font-semibold mb-2">How it works</h2>
                 <ol className="list-decimal list-inside space-y-1">
-                    <li>Enter a long URL (e.g. https://veryveryverylong.com/page123456/8910112/g7fuef83f3/).</li>
+                    <li>
+                        Enter a long URL (e.g.{" "}
+                        <span className="break-all text-blue-700">
+                            https://veryveryverylong.com/page123456/8910112/g7fuef83f3/
+                        </span>
+                        ).
+                    </li>
                     <li>Enter a preferred short ID (e.g. mylink123).</li>
                     <li>Click <strong>Generate</strong>.</li>
                     <li>You’ll get a short link like <code>https://tinylinks-mu.vercel.app/mylink123</code>.</li>
@@ -133,7 +139,11 @@ const Shorten = () => {
                     <div className="text-sm">{message}</div>
                     {status === "success" && (
                         <div className="flex items-center justify-between bg-blue-50 rounded p-2 mt-3">
-                            <Link href={generated} target="_blank" className="text-blue-800 underline break-all">
+                            <Link
+                                href={generated}
+                                target="_blank"
+                                className="text-blue-800 underline break-all max-w-[85%] truncate md:max-w-none"
+                            >
                                 {generated}
                             </Link>
                             <button onClick={copyToClipboard} className="hover:text-blue-600">
