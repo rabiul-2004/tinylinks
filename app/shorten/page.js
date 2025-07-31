@@ -74,10 +74,10 @@ const Shorten = () => {
             <div className="bg-white text-black p-4 rounded-lg shadow-md w-full max-w-md text-sm">
                 <h2 className="text-lg font-semibold mb-2">How it works</h2>
                 <ol className="list-decimal list-inside space-y-1">
-                    <li>Enter a long URL (e.g. https://example.com/page123456).</li>
+                    <li>Enter a long URL (e.g. https://veryveryverylong.com/page123456/8910112/g7fuef83f3/).</li>
                     <li>Enter a preferred short ID (e.g. mylink123).</li>
                     <li>Click <strong>Generate</strong>.</li>
-                    <li>You’ll get a short link like <code>https://tinylinks.site/mylink123</code>.</li>
+                    <li>You’ll get a short link like <code>https://tinylinks-mu.vercel.app/mylink123</code>.</li>
                     <li>Copy & share it with anyone!</li>
                 </ol>
             </div>
